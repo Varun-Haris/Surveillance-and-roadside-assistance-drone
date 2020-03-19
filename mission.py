@@ -55,8 +55,6 @@ class Mission():
 		#self.commands.set_mode('AUTO.TAKEOFF')
 		rate.sleep()
 		
-
-		'''
 		#arrow detection
 		
 
@@ -100,7 +98,7 @@ class Mission():
 		#self.comp.send_arb_waypoints()
 		#self.commands.set_mode('OFFBOARD')				#change later after making road following robust
 		self.comp.road_next_waypoint(self.delta)			#compute the next waypoint and the orientation
-		'''		
+		
 		self.commands.land()						#land the drone
 		rate.sleep()							
 		self.commands.disarm()						#disarm the drone
